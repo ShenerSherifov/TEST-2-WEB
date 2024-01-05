@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- zad 1 -->
+    <!-- <p>Find solution for: ax<sup>2</sup> + bx + c = 0</p>
+    <label for="a">a:</label>
+    <input type="number" id="a" value="2">
+    <br>
+    <label for="b">b:</label>
+    <input type="number" id="b" value="6">
+    <br>
+    <label for="c">c:</label>
+    <input type="number" id="c" value="2">
+    <br><br>
+    <button onclick="reshiKvadratno()">Find x!</button>
+
+    <p id="result"></p>
+    <script>
+        function reshiKvadratno() {
+            var a = parseFloat(document.getElementById('a').value);
+            var b = parseFloat(document.getElementById('b').value);
+            var c = parseFloat(document.getElementById('c').value);
+            var diskriminanta = b * b - 4 * a * c;
+            var x1, x2;
+
+            if (diskriminanta > 0) {
+                x1 = (-b + Math.sqrt(diskriminanta)) / (2 * a);
+                x2 = (-b - Math.sqrt(diskriminanta)) / (2 * a);
+                document.getElementById('result').innerHTML = "x1 = " + x1.toFixed(2) + "<br>x2 = " + x2.toFixed(2);
+            } else if (diskriminanta == 0) {
+                x1 = -b / (2 * a);
+                document.getElementById('result').innerHTML = "x1 = x2 = " + x1.toFixed(2);
+            } else {
+                document.getElementById('result').innerHTML = "Няма реални корени.";
+            }
+        }
+    </script> -->
+
+
+    <!-- zad 2 -->
+    <!-- <ul id="numbersList"></ul>
+    <script>
+        function izvediSpisak() {
+            var list = document.getElementById('numbersList');
+            for (var x = 1; x <= 10; x++) {
+                var listItem = document.createElement('li');
+                listItem.className = 'list-item';
+
+                var square = document.createElement('div');
+                square.className = 'square';
+                var squareText = document.createTextNode('X=' + x);
+                square.appendChild(squareText);
+
+                var circle = document.createElement('div');
+                circle.className = 'circle';
+                var cubeText = document.createTextNode('X^3=' + Math.pow(x, 3));
+                circle.appendChild(cubeText);
+
+                listItem.appendChild(square);
+                listItem.appendChild(circle);
+                list.appendChild(listItem);
+            }
+        }
+        izvediSpisak();
+    </script> -->
+
+    <!-- zad 3 -->
+    <!-- <h2>Първоначален Списък на Градове:</h2>
+    <ul id="original-cities-list"></ul>
+
+    <h2>Обновен Списък на Градове:</h2>
+    <ol id="updated-cities-list"></ol>
+
+    <script>
+        let cities = ["Tokyo", "Mexico City", "New York City", "Mumbai", "Seoul", "Shanghai", "Lagos", "Buenos Aires", "Cairo", "London"];
+
+        let originalList = document.getElementById('original-cities-list');
+        cities.forEach((grad) => {
+            let listItem = document.createElement('li');
+            listItem.textContent = grad;
+            originalList.appendChild(listItem);
+        });
+
+        cities.unshift("Kairo", "Beijing");
+        cities.push("Delhi", "Dhaka");
+
+        let updatedList = document.getElementById('updated-cities-list');
+        cities.forEach((grad) => {
+            let listItem = document.createElement('li');
+            listItem.textContent = grad;
+            updatedList.appendChild(listItem);
+        });
+    </script> -->
+
+    <!-- zad 4 -->
+    <!-- <form id="userForm">
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender">
+            <option value="male">Мъж</option>
+            <option value="female">Жена</option>
+        </select>
+        <br><br>
+        <label for="age">Години:</label>
+        <input type="number" id="age" name="age" min="0">
+        <br><br>
+        <input type="submit" value="Изпрати">
+    </form>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var gender = document.getElementById('gender').value;
+            var age = parseInt(document.getElementById('age').value, 10);
+            var message = '';
+
+            if (gender === 'male') {
+                document.body.style.backgroundColor = 'lightblue';
+            } else if (gender === 'female') {
+                document.body.style.backgroundColor = 'pink';
+            }
+            if (age <= 15) {
+                message = 'Здрасти! Време е за игра!';
+            } else if (age > 15 && age <= 60) {
+                message = 'Здравейте! Време е за работа!';
+            } else if (age > 60) {
+                message = 'Добър ден! Време е за почивка!';
+            }
+            alert(message);
+        });
+    </script> -->
+</body>
+
+</html>
